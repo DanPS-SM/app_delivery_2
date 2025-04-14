@@ -8,7 +8,7 @@ from lista_clientes import ListaClientes
 from lista_entregadores import ListaEntregadores  
 from lista_produtos import ListaProdutos
 from gera_qrcode import GeraQrcode
-from relatorio import GerarRelatorio
+from gera_relatorio import MainRelatorio
 
 class MainPedidos(QtWidgets.QMainWindow):
     def __init__(self):
@@ -104,7 +104,7 @@ class MainPedidos(QtWidgets.QMainWindow):
         self.lista_clientes_window.show()
     
     def abrir_relatorio(self):
-        self.lista_clientes_window = GerarRelatorio()
+        self.lista_clientes_window = MainRelatorio()
         self.lista_clientes_window.show()
 
 if __name__ == "__main__":
